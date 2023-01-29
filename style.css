@@ -1,0 +1,140 @@
+html {
+	font-family: sans-serif;
+}
+
+body {
+	margin: 0;
+}
+
+header {
+	background: #333;
+	height: 200px;
+}
+
+h1 {
+	text-align: center;
+	color: white;
+	line-height: 100px;
+	margin: 0;
+}
+
+.button-conteiner {
+	height: 100px;
+    border: 1px solid #333;
+}
+
+.lists-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+
+article {
+	padding: 10px;
+	margin: 0px;
+	background: #90B0EF;
+	flex: 1;
+	display: none;
+}
+
+@keyframes grow {
+    from {height: 10px;}
+    to {height: 100px;}
+}
+.show {
+	animation-name: grow;
+	animation-fill-mode: forwards;
+    animation-duration: 1.5s;
+}
+
+.h2contacts {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	text-align: center;
+}
+
+.contactText {
+	display: flex;
+}
+
+.images {
+}
+
+#text1 {
+  animation: fade-in 0.2s ease-in;
+}
+#text2 {
+  animation: fade-in 0.2s ease-in;
+}
+#text3 {
+  animation: fade-in 0.2s ease-in;
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes fade-out {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+
+div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Кнопка */
+a.button1 {
+  flex: 1;
+  justify-content: space-around;
+  margin: 16px;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  font-size: 100%;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: #053852 -1px 1px, #053852 1px 1px, #053852 1px -1px, #053852 -1px -1px;
+  text-decoration: none;
+  user-select: none;
+  padding: .3em .7em;
+  outline: none;
+  border-radius: 7px;
+  background: #053852;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  transition: background-position 999999s, color 999999s, text-shadow 999999s, linear 0.2s;
+}
+a.button1:hover {
+  text-shadow: #0175b1 -1px 1px, #0175b1 1px 1px, #0175b1 1px -1px, #0175b1 -1px -1px;
+  background: #0175b1;
+  background-size: 1000% 100%;
+}
+a.button1:hover {
+  background-position: 0 0;
+}
+
+a.button1:after {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: .3em .7em;
+  color: rgba(0,0,0,0);
+  text-shadow: none;
+  transition: 999999s;
+}
+
